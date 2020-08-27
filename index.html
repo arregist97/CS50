@@ -13,7 +13,10 @@
                 transform: translate(-50%, -50%);
                 border: 3px solid orange;
             }
-            input {
+            #search {
+                display:block;
+            }
+            .buttons {
                 display:block;
             }
         </style>
@@ -23,8 +26,11 @@
             <div class="vertical_center">
                 <img src="googlelogo.png" alt="Google">
                 <form action="https://google.com/search">
-                    <input type="text" name="q">
-                    <input type="submit" value="Google Search">
+                    <input id="search" type="text" name="q">
+                    <div class="buttons">
+                        <input type="submit" value="Google Search">
+                        <input id="gbqfbb" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit" data-ved="0ahUKEwjdqsTTo7rrAhWKhJ4KHeUHBmYQnRsIDg">
+                    </div>
                 </form>
             </div>
         </div>
