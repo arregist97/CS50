@@ -3,35 +3,133 @@
     <head>
         <title>Search</title>
         <style>
-            
+            .flex {
+                display: flex;
+            }
             .center {
+                flex-direction: column;
+                align-items: center;
+                height:100%;
+
+            }
+            .header {
+                height: 60px;
+            }
+            .logo {
+                flex-direction: column;
+                align-items: center;
+                min-height: 92px;
+                max-height: 290px;
+                height: calc(100% - 560px);
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+            .form {
+                padding: 20px;
+                max-height: 160px;
+                flex-shrink: 0;
+                box-sizing: border-box;
+                width: auto;
+                max-width: 584px;
+                position: relative;
+                margin: 0 auto;
+                padding-top: 6px;
+                border: 3px solid pink;
+            }
+            .searchbarpad {
+                width: auto;
+                max-width: 584px;
+                background: #fff;
+                border: 1px solid #dfe1e5;
+                box-shadow: none;
+                border-radius: 24px;
+                z-index: 3;
+                height: 44px;
+                margin: 0 auto;
+                border: 3px solid black;
+                width: 482px;
+            }
+            .searchbarpad2 {
+                flex: 1;
+                padding: 5px 8px 14px 16px;
+                border: 3px solid red;
+            }
+            .icon {
+                align-items: center;
+                padding-right: 13px;
+                margin-top: -5px;
+                border: 3px solid purple;
+                
+            }
+            .searchfield {
+                color: transparent;
+                white-space: pre;
+                height: 34px;
+                flex: 1;
+                flex-wrap: wrap;
+                border: 3px solid brown;
+            }
+            .searchbar {
+                background-color: transparent;
+                border: none;
                 margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                border: 3px solid orange;
+                padding: 0;
+                color: rgba(0,0,0,.87);
+                word-wrap: break-word;
+                outline: none;
+                flex: 100%;
+                /*margin-top: -37px;*/
+                height: 34px;
+                font-size: 16px;
             }
-            #search {
-                display:block;
-            }
+            
             .buttons {
-                display:block;
+                justify-content: center;
+                border: 3px solid pink;
             }
+            input[type=submit] {
+                background-color: #f2f3f4;
+                color: #585858;
+                border: none;
+                border-radius: 4px;
+                font-size: 14px;
+                height: 35px;
+                width: 130px;
+            }
+            .searchbutton {
+                margin-right: 5px;
+            }
+            .luckybutton {
+                margin-left: 5px;
+            }
+
         </style>
     </head>
     <body>
-        <div class="center">
-            <div class="vertical_center">
-                <img src="googlelogo.png" alt="Google">
-                <form action="https://google.com/search">
-                    <input id="search" type="text" name="q">
-                    <div class="buttons">
-                        <input type="submit" value="Google Search">
-                        <input id="gbqfbb" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit" data-ved="0ahUKEwjdqsTTo7rrAhWKhJ4KHeUHBmYQnRsIDg">
-                    </div>
-                </form>
+        <div class="center flex">
+            <div>
+                <div class="header flex"></div>
+                <div class="logo flex">
+                    <img src="googlelogo.png" alt="Google">
+                </div>
+                <div class="form">
+                    <form action="https://google.com/search">
+                        <div class="searchbarpad flex">
+                            <div class="searchbarpad2 flex">
+                                <div class="icon flex">
+                                    
+                                </div>
+                                <div class="searchfield flex">
+                                    <input class="searchbar flex" maxlength="2048" name="q" type="text" jsaction="paste:puy29d" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Search" value="" aria-label="Search" data-ved="0ahUKEwi63-3817zrAhWFtp4KHRmlDTYQ39UDCAY">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons flex">
+                            <input class="searchbutton" type="submit" value="Google Search">
+                            <input class="luckybutton" id="gbqfbb" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit" data-ved="0ahUKEwjdqsTTo7rrAhWKhJ4KHeUHBmYQnRsIDg">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </body>
