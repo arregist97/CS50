@@ -1,8 +1,380 @@
 <html lang="en">
     <head>
         <title>Advanced Search</title>
+        <style>
+            .flex {
+                display: flex;
+            }
+			.logo {
+				min-height: 92px;
+				max-height: 290px;
+				height: calc(100% - 560px);
+				flex-shrink: 0;
+				box-sizing: border-box;
+			}
+            .center {
+                flex-direction: column;
+                align-items: center;
+                height:100%;
+
+            }
+            .header {
+                height: 60px;
+            }
+            .appbar {
+				color: #d93025;
+				font-size: 20px;
+				margin: 25px 35px;
+            }
+			.gb_8f {
+				height: 60px;
+				width: 100%;
+				background: #f1f1f1;
+			}			
+			.imgsized { 
+				padding-top: 15px;
+				padding-left: 5px;
+				height: 32px;
+			}
+			.fontfamarial {
+				font-family: arial,sans-serif; 			
+			}
+			.gy3Eif {
+				border-bottom: 1px solid #ebebeb;
+			}
+			.lOTAE {
+				color: #333;
+				height: 30px;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.Mza7yc {
+				display: block;
+				max-width: 1140px;
+				min-width: 200px;
+				width: 96%;
+				margin: 40px 2% 0 45px;
+			}			
+			.AdvSrchForm {
+				vertical-align: baseline;
+			}
+			.otByu {
+				vertical-align: baseline;
+			}			
+			.yIQOUb {
+				vertical-align: baseline;
+			}
+			.I1Kbt {
+				float: left;
+				display: inline-block;
+				min-width: 167px;
+				width: 16%;
+				font-size: 16px;
+				height: 42px;
+				font-weight: 500;
+				color: #333;
+				vertical-align: middle;
+			}
+			.HoCfzc {
+				float: left;
+				display: inline-block;
+				min-width: 167px;
+				min-height: 41px;
+				vertical-align: middle;
+				width: 50%;
+			}
+			.orcpGe {
+				display: inline-block;
+				float: left;
+				width: 33%;
+				font-size: 13px;
+				font-weight: 700;
+				color: #777;
+				padding-left: 5px;
+				vertical-align: middle;
+			}
+			.Qy8Xkb {
+				margin: 18px 0;
+				clear: both;
+				border-top: 1px solid #ebebeb;
+			}
+			.FAcADc {
+				float: left;
+				display: inline-block;
+				min-width: 167px;
+				width: 16%;
+				height: 42px;
+				color: #222;
+				font-size: 13px;
+				line-height: 16px;
+				vertical-align: middle;			
+			}
+			.jYcx0e {
+				float: left;
+				display: inline-block;
+				min-width: 167px;
+				min-height: 41px;
+				vertical-align: middle;
+				width: 50%;			
+			}
+			.PLLUQc {
+				padding-right: 16px;
+			}
+			.jfk-textinput {
+				border-radius: 1px;
+				border: 1px solid #d9d9d9;
+				border-top: 1px solid #c0c0c0;
+				font-size: 13px;
+				height: 25px;
+				padding: 1px 8px;
+				width: 100%;
+				text-align: left;			
+			}
+			.cwqNnb {
+				float: left;
+				width: 32%;
+				min-width: 160px;
+				margin: 0 0 8px 1%;
+				color: #555;
+				font-size: 11px;
+				padding-left: 5px;
+				vertical-align: middle;
+				position: relative;			
+			}
+			.dulCv {
+				display: none !important;
+			}
+			.BFlQMb {
+				color: #666;
+				font-family: monospace;
+				font-size: 11px;
+				white-space: pre;			
+			}
+			. {
+			
+			}
+        </style>
     </head>
-    <body>
+    <body class="fontfamarial">
+		<div class="gb_8f">
+			<img class="imgsized" src="googlelogo.png" alt="Google">
+		</div>
+	
+
+
+		<div class="appbar">
+			<label style="margin-left:10px"> Advanced Search</label>
+		</div>
+		
+		<div class="gy3Eif"></div>		
+		<br>
+		<br>
+		<div class="Mza7yc"> 		
+		
+		
+		<form class="AdvSrchForm" action="/search" method="GET" name="f">    <input value="en" name="hl" type="hidden"> 
+			<div class="otByu"> 
+				<div class="yIQOUb"> 
+					<div class="I1Kbt"> <div class="lOTAE"> <span>Find pages with...</span>   </div> </div> 
+					<div class="HoCfzc">&nbsp; </div> 
+					<div class="orcpGe"> <div class="lOTAE"> To do this in the search box</div> </div> 
+				</div> 
+			</div> 
+			<div class="otByu"> 
+				<div class="yIQOUb"> 
+					<div class="FAcADc"> <div class="lOTAE"> <label for="xX4UFf"> all these words:</label>   </div> </div> 
+					<div class="jYcx0e"> <div class="PLLUQc"> <input class="jfk-textinput" value="" autofocus="autofocus" id="xX4UFf" name="as_q" type="text"> </div> </div> 
+					<div class="cwqNnb dulCv"> 
+						<div class="lOTAE"> Type the important words:  <span class="BFlQMb"> tricolor rat terrier</span>   </div> 
+					</div> 
+				</div> 
+				<div class="yIQOUb"> 
+					<div class="FAcADc"> <div class="lOTAE"> <label for="CwYCWc"> this exact word or phrase:</label>   </div> </div> 
+					<div class="jYcx0e"> <div class="PLLUQc"> <input class="jfk-textinput" value="" id="CwYCWc" name="as_epq" type="text"> </div> </div> 
+					<div class="cwqNnb dulCv"> <div class="lOTAE"> Put exact words in quotes:  <span class="BFlQMb"> "rat terrier"</span>   </div> </div> 
+				</div> 
+				<div class="yIQOUb"> 
+					<div class="FAcADc"> <div class="lOTAE"> <label for="mSoczb"> any of these words:</label>   </div> </div> 
+					<div class="jYcx0e"> <div class="PLLUQc"> <input class="jfk-textinput" value="" id="mSoczb" name="as_oq" type="text"> </div> </div> 
+					<div class="cwqNnb dulCv"> <div class="lOTAE"> Type <span class="BFlQMb">OR</span> between all the words you want:  <span class="BFlQMb"> miniature OR standard</span>   </div> </div> 
+				</div> 
+				<div class="yIQOUb"> 
+					<div class="FAcADc"> <div class="lOTAE"> <label for="t2dX1c"> none of these words:</label>   </div> </div> 
+					<div class="jYcx0e"> <div class="PLLUQc"> <input class="jfk-textinput" value="" id="t2dX1c" name="as_eq" type="text"> </div> </div> 
+					<div class="cwqNnb dulCv"> <div class="lOTAE"> Put a minus sign just before words you don't want:  <span class="BFlQMb"> -rodent, -"Jack Russell"</span>   </div> 
+					</div> 
+				</div> 
+				<div class="yIQOUb"> 
+				<div class="FAcADc"> <div class="lOTAE"> <label for="LK5akc">numbers ranging from:</label> </div> </div> 
+				<div class="jYcx0e" style="position:relative"> 
+					<div style="display:table;width:100%"> 
+						<div style="display:table-cell;padding-right:16px"> <input class="jfk-textinput" id="LK5akc" name="as_nlo" type="text"> </div> 
+						<div style="display:table-cell;width:40px;padding-right:6px;padding-left:6px;text-align:center;font-size:13px;color:#222"> to</div> 
+						<div style="display:table-cell;padding-right:16px"> <input class="jfk-textinput" name="as_nhi" type="text"> </div> 
+					</div> 
+				</div> 
+				<div class="cwqNnb dulCv"> <div class="lOTAE"> Put 2 periods between the numbers and add a unit of measure: <span class="BFlQMb">10..35 lb, $300..$500, 2010..2011</span></div> </div> 
+				</div> 
+				<div class="yIQOUb"></div> 
+			</div> 
+			<div class="Qy8Xkb"></div> 
+			<div class="otByu"> <div class="yIQOUb"> <div class="I1Kbt"> <div class="lOTAE"> <span>Then narrow your results by...</span> </div> </div> </div> 
+			</div> 
+			<div class="otByu"> 
+				<div class="yIQOUb"> 
+					<div class="FAcADc"> 
+						<div class="lOTAE"> 
+							<label for="lr_input">language:</label> 
+						</div> 
+					</div> 
+					<div class="jYcx0e">
+						<div style="position:relative"><input id="lr_input" name="lr" value="" type="hidden">
+							<div class="goog-select gGbPid goog-inline-block goog-flat-menu-button" id="lr_button" role="listbox" aria-activedescendant=":1b" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;">
+								<div class="goog-inline-block goog-flat-menu-button-caption" id=":1b" role="option" aria-selected="true" aria-setsize="47" aria-posinset="1">
+									any language
+								</div>
+								<div class="goog-inline-block goog-flat-menu-button-dropdown" aria-hidden="true">&nbsp;</div>
+							</div>
+						</div>
+					</div> 
+					<div class="cwqNnb"> 
+						<div class="lOTAE"> 
+							Find pages in the language you select.
+						</div> 
+					</div> 
+				</div>
+				<div class="yIQOUb"> 
+					<div class="FAcADc"> <div class="lOTAE"> <label for="cr_input">region:</label> </div> </div> 
+					<div class="jYcx0e">
+						<div style="position:relative"><input id="cr_input" name="cr" value="" type="hidden">
+							<div class="goog-select gGbPid goog-inline-block goog-flat-menu-button" id="cr_button" role="listbox" aria-activedescendant=":7y" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;">
+								<div class="goog-inline-block goog-flat-menu-button-caption" id=":7y" role="option" aria-selected="true" aria-setsize="238" aria-posinset="1">any region</div>
+								<div class="goog-inline-block goog-flat-menu-button-dropdown" aria-hidden="true">&nbsp;</div>
+							</div>
+						</div>
+					</div> 
+					<div class="cwqNnb"> <div class="lOTAE"> <span> Find pages published in a particular region.</span>  </div> </div> 
+				</div> 
+				<div class="yIQOUb"> 
+						<div class="FAcADc"> 
+							<div class="lOTAE"> <label for="as_qdr_input"> last update:</label>  
+							</div> 
+						</div> 
+					<div class="jYcx0e"><div style="position:relative"><input id="as_qdr_input" name="as_qdr" value="all" type="hidden">
+						<div class="goog-select gGbPid goog-inline-block goog-flat-menu-button" id="as_qdr_button" role="listbox" aria-activedescendant=":84" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;">
+						<div class="goog-inline-block goog-flat-menu-button-caption" id=":84" role="option" aria-selected="true" aria-setsize="5" aria-posinset="1">anytime</div>
+								<div class="goog-inline-block goog-flat-menu-button-dropdown" aria-hidden="true">&nbsp;
+								</div>
+							</div>
+						</div>
+					</div> 
+					<div class="cwqNnb"> 
+						<div class="lOTAE"> 
+							<span> Find pages updated within the time you specify.</span> 
+						</div> 
+					</div> 
+				</div>  
+				<div class="yIQOUb"> 
+					<div class="FAcADc"> <div class="lOTAE"> <label for="NqEkZd">site or domain:</label> </div> </div> 
+					<div class="jYcx0e"> 
+						<div class="PLLUQc"> <input class="jfk-textinput" value="" id="NqEkZd" name="as_sitesearch" type="text"> 
+						</div> 
+					</div> 
+					<div class="cwqNnb"> 
+						<div class="lOTAE"> Search one site (like  
+							<span class="BFlQMb"> wikipedia.org</span>    ) or limit your results to a domain like 
+							<span class="BFlQMb">.edu</span>, 
+							<span class="BFlQMb">.org</span> or 
+							<span class="BFlQMb">.gov</span>
+						</div> 
+					</div> 
+				</div> 
+				<div class="yIQOUb"> 
+					<div class="FAcADc"> 
+						<div class="lOTAE"> 
+							<label for="as_occt_input">terms appearing:</label> 
+						</div> 
+					</div> 
+					<div class="jYcx0e">
+						<div style="position:relative"><input value="any" id="as_occt_input" name="as_occt" type="hidden">
+							<div class="goog-select gGbPid goog-inline-block goog-flat-menu-button" id="as_occt_button" role="listbox" aria-activedescendant=":8a" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;">
+								<div class="goog-inline-block goog-flat-menu-button-caption" id=":8a" role="option" aria-selected="true" aria-setsize="5" aria-posinset="1">anywhere in the page</div>
+								<div class="goog-inline-block goog-flat-menu-button-dropdown" aria-hidden="true">&nbsp;</div>
+							</div>
+						</div>
+					</div> 
+					<div class="cwqNnb"> <div class="lOTAE"> Search for terms in the whole page, page title, or web address, or links to the page you're looking for.</div> </div> 
+				</div>  
+				<div class="yIQOUb"> <div class="FAcADc"> <div class="lOTAE"> <a href="https://support.google.com/websearch?p=adv_safesearch&amp;hl=en">SafeSearch</a>:</div> </div> 
+					<div class="jYcx0e"> 
+						<div>
+							<div style="position:relative"><input value="images" id="as_safesearch_input" name="safe" type="hidden">
+								<div class="goog-select gGbPid goog-inline-block goog-flat-menu-button" id="as_safesearch_button" role="listbox" aria-activedescendant=":8t" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;">
+									<div class="goog-inline-block goog-flat-menu-button-caption" id=":8t" role="option" aria-selected="true" aria-setsize="2" aria-posinset="1">
+										Show most relevant results
+									</div>
+									<div class="goog-inline-block goog-flat-menu-button-dropdown" aria-hidden="true">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div> 
+					<div class="cwqNnb"> <div class="lOTAE"> Tell <a href="https://support.google.com/websearch?p=adv_safesearch&amp;hl=en">SafeSearch</a> whether to filter sexually explicit content.</div> </div> 
+				</div> 
+				<div class="yIQOUb"> <div class="FAcADc"> <div class="lOTAE"> <label for="as_filetype_input">file type:</label> </div> </div> 
+					<div class="jYcx0e"> 
+						<div style="position:relative"><input value="" id="as_filetype_input" name="as_filetype" type="hidden">
+							<div class="goog-select gGbPid goog-inline-block goog-flat-menu-button" id="as_filetype_button" role="listbox" aria-activedescendant=":8q" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;">
+								<div class="goog-inline-block goog-flat-menu-button-caption" id=":8q" role="option" aria-selected="true" aria-setsize="11" aria-posinset="1">
+									any format
+								</div>
+								<div class="goog-inline-block goog-flat-menu-button-dropdown" aria-hidden="true">
+									&nbsp;
+								</div>
+							</div>
+						</div>  
+					</div> 
+					<div class="cwqNnb"> <div class="lOTAE"> Find pages in the format you prefer.</div>  </div> 
+				</div> 
+				<div class="yIQOUb"> 
+					<div class="FAcADc"> 
+						<div class="lOTAE"> <a href="https://support.google.com/websearch?p=ws_images_usagerights&amp;hl=en">usage rights</a>:</div> 
+					</div> 
+					<div class="jYcx0e"> 
+						<div style="position:relative"><input value="" id="as_rights_input" data-name="sur" data-tbs="true" type="hidden">
+								<div class="goog-select gGbPid goog-inline-block goog-flat-menu-button" id="as_rights_button" role="listbox" aria-activedescendant=":8e" aria-expanded="false" tabindex="0" aria-haspopup="true" style="user-select: none;">
+									<div class="goog-inline-block goog-flat-menu-button-caption" id=":8e" role="option" aria-selected="true" aria-setsize="3" aria-posinset="1">all</div>
+									<div class="goog-inline-block goog-flat-menu-button-dropdown" aria-hidden="true">&nbsp;</div>
+								</div>
+						</div> 
+					</div> 
+					<div class="cwqNnb"> 
+						<div class="lOTAE"> Find pages you are free to use yourself.</div>  
+					</div> 
+				</div> 
+				<div class="yIQOUb"> 
+					<div class="jYcx0e" style="text-align:right"> 
+						<input id="CIGjud" name="tbs" type="hidden" value=""> 
+						<input class="jfk-button jfk-button-action dUBGpe" style="-webkit-user-select:none;user-select:none;line-height:100%;height:30px;min-width:120px" value="Advanced Search" type="submit"> 
+					</div>
+				</div> 
+			</div> 
+		</form>		
+		
+		
+		
+			<div class="lOTAE"> 
+				<span>Find pages with...</span>   
+			</div>		
+			<br>
+			<br>
+			<div class="lOTAE"> 
+				<span>Then narrow your results by...</span>
+			</div>		
+		</div>		
+		
+		
         <form action="https://google.com/search">
             <input type="text" name="q">
             <input type="submit" value="Google Search">
