@@ -5,16 +5,16 @@
 .flex {
     display: flex;
 }
-.center {
+.gcenter {
     flex-direction: column;
     align-items: center;
     height:100%;
 
 }
-.header {
+.gheader {
     height: 60px;
 }
-.logo {
+.glogo {
     flex-direction: column;
     align-items: center;
     min-height: 92px;
@@ -23,6 +23,30 @@
     flex-shrink: 0;
     box-sizing: border-box;
 }
+
+.gbuttons {
+    padding-top: 18px;
+    justify-content: center;
+    /*border: 3px solid pink;*/
+}
+input[type=submit] {
+    background-color: #f2f3f4;
+    color: #585858;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 35px;
+    width: 130px;
+}
+.gsearchbutton {
+    margin-right: 5px;
+}
+.gluckybutton {
+    margin-left: 5px;
+}
+
+
+/*---------Shared Styles---------------------------------*/
 .form {
     padding: 20px;
     max-height: 160px;
@@ -99,31 +123,6 @@
     height: 34px;
     font-size: 16px;
 }
-
-.buttons {
-    padding-top: 18px;
-    justify-content: center;
-    /*border: 3px solid pink;*/
-}
-input[type=submit] {
-    background-color: #f2f3f4;
-    color: #585858;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    height: 35px;
-    width: 130px;
-}
-.searchbutton {
-    margin-right: 5px;
-}
-.luckybutton {
-    margin-left: 5px;
-}
-
-
-/*---------Shared Styles---------------------------------*/
-
 
 
 /*---------Google Image Search Styles--------------------*/
