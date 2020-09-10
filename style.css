@@ -2,28 +2,6 @@
 
 
 /*---------Google Search Styles--------------------------*/
-.flex {
-    display: flex;
-}
-.gcenter {
-    flex-direction: column;
-    align-items: center;
-    height:100%;
-
-}
-.gheader {
-    height: 60px;
-}
-.glogo {
-    flex-direction: column;
-    align-items: center;
-    min-height: 92px;
-    max-height: 290px;
-    height: calc(100% - 560px);
-    flex-shrink: 0;
-    box-sizing: border-box;
-}
-
 .gbuttons {
     padding-top: 18px;
     justify-content: center;
@@ -47,6 +25,27 @@ input[type=submit] {
 
 
 /*---------Shared Styles---------------------------------*/
+.flex {
+    display: flex;
+}
+.center {
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+
+}
+.header {
+    height: 60px;
+}
+.logo {
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
 .form {
     padding: 20px;
     max-height: 160px;
@@ -127,6 +126,19 @@ input[type=submit] {
 
 /*---------Google Image Search Styles--------------------*/
 
+#hplogo {
+    background: url(googlelogo.png) no-repeat;
+    background-size: auto;
+}
 
+.ilogo-subtext {
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    left: 215px;
+    position: relative;
+    top: 76px;
+    white-space: nowrap;
+}
+}
 
 /*---------Google Advanced Search Styles-----------------*/
